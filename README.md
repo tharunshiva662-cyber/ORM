@@ -42,7 +42,8 @@ class SwiggyAdmin(admin.ModelAdmin):
     list_display=('mid','mname','price','quality','rating')
 
 ## OUTPUT
-![alt text](<Screenshot 2026-11-25 165728-1.png>)
+<img width="1537" height="797" alt="Screenshot 2026-11-25 165728" src="https://github.com/user-attachments/assets/de352409-e590-45f9-9486-86343a807650" />
+
 
 ## RESULT
 Thus the program for creating E-commerce website database using ORM hass been executed successfully
