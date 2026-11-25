@@ -1,12 +1,8 @@
 # Ex02 Django ORM Web Application
-## Date: 
+## Date: 25.11.2026
 
 ## AIM
 To develop a Django Application to store and retrieve data from a E-Commerce Website Database for Amazon or Flipkart using Object Relational Mapping(ORM).
-
-
-## ENTITY RELATIONSHIP DIAGRAM
-
 
 
 ## DESIGN STEPS
@@ -24,13 +20,29 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+```
+admin.py
 
+from django.contrib import admin
+from .models import Swiggy,SwiggyAdmin
+admin.site.register(Swiggy,SwiggyAdmin)
 
+models.py
+
+from django.db import models
+from django.contrib import admin
+class Swiggy(models.Model):
+    mid=models.IntegerField()
+    mname=models.CharField(max_length=100)
+    price=models.IntegerField()
+    quality=models.IntegerField()
+    rating=models.FloatField()
+
+class SwiggyAdmin(admin.ModelAdmin):
+    list_display=('mid','mname','price','quality','rating')
 
 ## OUTPUT
-
-Include the screenshot of your admin page.
-
+![alt text](<Screenshot 2026-11-25 165728-1.png>)
 
 ## RESULT
 Thus the program for creating E-commerce website database using ORM hass been executed successfully
