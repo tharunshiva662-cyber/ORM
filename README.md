@@ -40,9 +40,11 @@ class Swiggy(models.Model):
 
 class SwiggyAdmin(admin.ModelAdmin):
     list_display=('mid','mname','price','quality','rating')
+```
 
 ## OUTPUT
-<img width="1537" height="797" alt="Screenshot 2026-11-25 165728" src="https://github.com/user-attachments/assets/de352409-e590-45f9-9486-86343a807650" />
+<img width="1537" height="797" alt="Screenshot 2026-11-25 165728" src="https://github.com/user-attachments/assets/dd691e6a-ce02-44e8-bd0b-badd5a5dc349" />
+
 
 
 ## RESULT
